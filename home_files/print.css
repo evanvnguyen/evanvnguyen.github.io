@@ -1,0 +1,43 @@
+@media print{
+    html{
+        zoom: 80%;
+    }
+    .resumeHeader{
+
+        display: flex;
+        flex-direction: row;
+        margin-bottom: -1.6rem;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .resumeTitle{
+        font-size: 3rem;
+    }
+    hr {
+        display: block;
+        height: .5rem;
+        margin: 0;
+        background: transparent;
+        width: 100%;
+        border: none;
+        border-top: solid .2rem rgb(0, 0, 0);
+    }
+    .resumeContent{
+        max-width: 100%;
+        flex-flow: row wrap;
+        justify-content:flex-start;
+        align-self: auto;
+    }
+    .section{
+        max-width: 50%;
+    }
+    .bulletPoints{
+        max-width: 85%;
+    }
+    .footer{
+        display: none;
+    }
+
+
+}

@@ -1,0 +1,177 @@
+/* body{
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+} */
+html{
+    background-color:rgb(251, 242, 228);
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+
+}
+body{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.navBar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+    position: fixed;
+    overflow: hidden;
+    background-color: rgb(251, 242, 228);
+    box-shadow: 1px 5px 5px rgba(0,0,0,.1);
+    gap: 5%;
+}
+.navBar li {
+    list-style: none;
+}
+.navBar a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+
+.resumeContent{
+    text-align: center;
+}
+
+.outer-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.section{
+    padding-top: 8%;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+}
+
+.section1{
+    width: 30%;
+}
+.section2{
+    padding-top: 5%;
+    width: 55%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+h4.titleName{
+    width: 100%;
+    margin-bottom: 0px;
+    font-size: 2rem;
+}
+
+a{
+    color: rgb(64,121,185);
+}
+
+a :hover{
+    background-color: rgba(219, 219, 219, 0.575);
+    color:rgb(64,121,185);
+}
+
+a ::after{
+    color: rgb(64,121,185);
+}
+
+
+.resize {
+    width: 65%;
+    height: auto;
+    border-radius: 40px;
+}
+
+.mediaLinks{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    font-size: 30px;
+}
+
+h2.aboutMeSections{
+    margin-bottom: 0px;
+}
+
+.aboutMeText{
+    margin-top: 0px;
+}
+
+h3.footer{
+    text-align: center;
+    display: flex;
+}
+.aboutMeSections{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+
+@media only screen and (max-width: 1680px) {
+    .section{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .section{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .section1{
+        margin-top: 6%;
+        height: auto;
+    }
+    .section2{
+        width: 60%;
+        height: auto;
+    }
+    .resize{
+        max-width: 70%;
+        min-width: 40%;
+    }
+    .mediaLinks i{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title{
+        font-size: 1rem;
+    }
+    .section{
+        padding-top: 5%;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .mediaLinks{
+        gap: 15%;
+    }
+
+    .section2{
+        max-width: 80%;
+    }
+    .resize{
+        width: 60%;
+    }
+    .navBar{
+        gap: 10%;
+        padding: 2%;
+    }
+}
